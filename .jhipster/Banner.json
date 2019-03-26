@@ -1,0 +1,27 @@
+{
+    "name": "Banner",
+    "fields": [
+        {
+            "fieldName": "banner",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "describs",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isdelete",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190326120012",
+    "entityTableName": "banner",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

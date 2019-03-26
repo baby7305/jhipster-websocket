@@ -13,6 +13,10 @@ import password, { PasswordState } from 'app/modules/account/password/password.r
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
 import sessions, { SessionsState } from 'app/modules/account/sessions/sessions.reducer';
+// prettier-ignore
+import banner, {
+  BannerState
+} from 'app/entities/banner/banner.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -27,6 +31,7 @@ export interface IRootState {
   readonly password: PasswordState;
   readonly settings: SettingsState;
   readonly sessions: SessionsState;
+  readonly banner: BannerState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -43,6 +48,7 @@ const rootReducer = combineReducers<IRootState>({
   password,
   settings,
   sessions,
+  banner,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });
